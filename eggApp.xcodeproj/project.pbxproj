@@ -12,6 +12,7 @@
 		6B39AA0E23051D13002262B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B39AA0C23051D13002262B5 /* Main.storyboard */; };
 		6B39AA1023051D14002262B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B39AA0F23051D14002262B5 /* Assets.xcassets */; };
 		6B39AA1323051D14002262B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B39AA1123051D14002262B5 /* LaunchScreen.storyboard */; };
+		6B39AA1B23053AFC002262B5 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39AA1A23053AFC002262B5 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6B39AA0F23051D14002262B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B39AA1223051D14002262B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B39AA1423051D14002262B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B39AA1A23053AFC002262B5 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				6B39AA0823051D13002262B5 /* AppDelegate.swift */,
 				6B39AA0A23051D13002262B5 /* ViewController.swift */,
 				6B39AA0C23051D13002262B5 /* Main.storyboard */,
+				6B39AA1A23053AFC002262B5 /* NextViewController.swift */,
 				6B39AA0F23051D14002262B5 /* Assets.xcassets */,
 				6B39AA1123051D14002262B5 /* LaunchScreen.storyboard */,
 				6B39AA1423051D14002262B5 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B39AA0B23051D13002262B5 /* ViewController.swift in Sources */,
+				6B39AA1B23053AFC002262B5 /* NextViewController.swift in Sources */,
 				6B39AA0923051D13002262B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
