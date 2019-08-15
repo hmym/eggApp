@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,59 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eggApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brG-bl-PFa">
+                                <rect key="frame" x="0.0" y="652" width="414" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Egg!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inO-9g-Tdx">
+                                <rect key="frame" x="0.0" y="194" width="414" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCX-HL-fnA">
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
+                                <state key="normal" image="egg1"/>
+                                <connections>
+                                    <action selector="tappedEggButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uji-TW-Ah6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RCX-HL-fnA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CoD-lv-ApT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RCX-HL-fnA" secondAttribute="trailing" id="HOC-YB-UZt"/>
+                            <constraint firstItem="RCX-HL-fnA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIO-8J-f7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="brG-bl-PFa" secondAttribute="bottom" constant="150" id="Ugl-3v-iGH"/>
+                            <constraint firstItem="RCX-HL-fnA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V6A-FR-WKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brG-bl-PFa" secondAttribute="trailing" id="Wq6-Jw-C8i"/>
+                            <constraint firstItem="inO-9g-Tdx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Xcw-Iu-teW"/>
+                            <constraint firstItem="brG-bl-PFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZN3-L8-9Gu"/>
+                            <constraint firstItem="brG-bl-PFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hmz-SG-QMC"/>
+                            <constraint firstItem="inO-9g-Tdx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kMj-kU-8SR"/>
+                            <constraint firstItem="inO-9g-Tdx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pvO-p8-NKH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="inO-9g-Tdx" secondAttribute="trailing" id="yca-mu-aAP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonImage" destination="RCX-HL-fnA" id="ask-cO-Shv"/>
+                        <outlet property="commentLabel" destination="inO-9g-Tdx" id="FNk-F8-cpm"/>
+                        <outlet property="countLabel" destination="brG-bl-PFa" id="f0R-mk-llI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="egg1" width="300" height="300"/>
+    </resources>
 </document>
